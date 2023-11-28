@@ -4,8 +4,7 @@
 
 /**
  * check_cycle - function that check singly linked list
- * @listint_t: the parameter 1
- * @list: the parameter 2
+ * @list: the pointer
  * Return: return 0
  */
 
