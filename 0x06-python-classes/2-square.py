@@ -6,7 +6,7 @@
 class Square:
     """ square class
 
-    this class is a minimal square class with private attribute that are checked for 	 the type and value error implementation.
+    this is a square class with private instance attribute
 
     """
     def __init__(self, size=0):
