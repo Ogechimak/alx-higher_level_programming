@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+"""Class for retangles"""
+
 
 class Rectangle:
-    """pass the class to avoid error"""
+    """pass the class without error"""
     pass
