@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-import sys
-def magic_string():
-    return
+
+def magic_string(iterations):
+    return "BestSchool" * iterations
+iteration = 3 magic_string(iterations)
