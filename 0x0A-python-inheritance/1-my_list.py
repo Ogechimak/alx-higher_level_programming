@@ -1,10 +1,21 @@
 #!/usr/bin/python3
-"""Class that inherits from list"""
+
+"""
+class the inherits from the list class
+"""
+
+
 class MyList(list):
-    def _init_(self, *args, **kwargs):
-        super()._init_(*args, **kwargs)
-"""print the list in a sorted order"""
-def print_sorted(self):
-    copy = self.copy()
-    copy.sort()
-    print(copy)
+    """
+        a class that extends the functionality of the lst class
+    """
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def print_sorted(self):
+        """
+            print a list in a soretd order
+        """
+        cpy = self.copy()
+        cpy.sort()
+        print(cpy)
