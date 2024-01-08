@@ -1,10 +1,13 @@
 #!/usr/bin/python3
-"""A class that inherits from int"""
+"""MyInt class module"""
+
+
 class MyInt(int):
-    """class that inherits from int"""
+    """A MyInt class"""
     def __eq__(self, other):
-        """method is overridden to invert the behavior of the '==' operator"""
-        return not super().__eq__(other)
+        """Overides and inverts == operator"""
+        return int(self) != int(other)
+
     def __ne__(self, other):
-        """methd is overridden to invert the behavior of the '!=' operator"""
-        return not super().__ne__(other)
+        """Overides and inverts != operator"""
+        return int(self) == int(other)
