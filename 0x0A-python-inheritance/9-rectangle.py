@@ -1,34 +1,20 @@
 #!/usr/bin/python3
-
-"""
-    a module that contains a public instance method
-"""
+"""Module to create a class"""
 
 
-bg = __import__('7-base_geometry').BaseGeometry
-""" importation of Base Geometry class """
-
-
-class Rectangle(bg):
-    """ Base geometry class with only one method  """
+class Rectangle(__import__('7-base_geometry').BaseGeometry):
+    """Class that inherits from BaseGeometry"""
     def __init__(self, width, height):
-        """constructor"""
-        self.integer_validator(width, width)
-        self.integer_validator(height, height)
-        self.__height = height
+        """Instantiation with width and height"""
+        self.integer_validator("width", width)
         self.__width = width
+        self.integer_validator("height", height)
+        self.__height = height
 
     def area(self):
-        """ area function """
+        """Public instance method that returns the area"""
         return self.__width * self.__height
 
-    def integer_validator(self, name, value):
-        """ validate an integer """
-        if type(value) is bool or not isinstance(value, int):
-            raise TypeError(f"{name} must be an integer")
-        if value <= 0:
-            raise ValueError(f"{name} must be greater than 0")
-
     def __str__(self):
-        """ string rep. of the instance """
-        return f"[Rectangle] {self.__width}/{self.__height}"
+        """Returns a string"""
+        return "[Rectangle] {}/{}".format(self.__width, self.__height)
