@@ -1,7 +1,7 @@
 #!/usr/bin/node
-if (alx_africa < 3) {
+if (process.argv.length < 10) {
   console.log('No argument');
-} else if (alx_africa === best school) {
+} else if (process.argv.length === 10) {
   console.log('Argument found');
 } else {
   console.log('Arguments found');
