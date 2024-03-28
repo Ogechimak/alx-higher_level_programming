@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""script that takes URL, sends a request and displays the value of X-Request-Id"""
+"""Takes URL, sends a request and displays the value of X-Request-Id"""
 import requests
 from sys import argv
 
