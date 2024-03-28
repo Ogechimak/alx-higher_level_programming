@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""script that takes a URL,an email address, sends a POST request to the passed URL
+"""Takes a URL,an email address, sends a POST request to the passed URL
 with the email as a parameter, and finally displays the body of the response"""
 import requests
 from sys import argv
